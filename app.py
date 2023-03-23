@@ -7,7 +7,7 @@ import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("8.8.8.8", 80))
 ip_addr=input("Enter Server IP\n ex:192.168.0.102\n")
-# ip_addr=s.getsockname()[0]
+
 s.close()
 def ui(location):
     qt_app = QApplication(sys.argv)
